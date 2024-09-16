@@ -17,7 +17,7 @@ import org.hibernate.annotations.UuidGenerator;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+//@JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class Contact {
     @Id
     @UuidGenerator

@@ -79,7 +79,7 @@ public class ContactService {
             Files.copy(image.getInputStream(), fileStorageLocation.resolve(filename), REPLACE_EXISTING);
             return ServletUriComponentsBuilder
                     .fromCurrentContextPath()
-                    .path("/contacts/image" + filename)
+                    .path("/contacts/image/" + filename)
                     .toUriString();
         }
         catch (Exception e) {
